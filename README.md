@@ -4,6 +4,8 @@ A chatbot is a computer program designed to simulate conversation with human use
 
  This chatbot is implemented in Python, and it uses .toml files to store its responses. The .toml file contains a dictionary of patterns and their corresponding responses. When the chatbot receives a message from the user, it checks if the message matches one of the patterns in the .toml file and returns the corresponding response.
 
+It uses the toml library to parse the .toml file, and the startswith() method to check if the user's message matches one of the patterns. The Chatbot class has a respond() method that takes a message as input and returns the appropriate response. This is just a basic example, you can further improve this by making it more robust like adding more patterns, keeping the history of conversation, and providing more intelligent response.
+
 ```
 [responses]
 "pattern1" = "response1"
